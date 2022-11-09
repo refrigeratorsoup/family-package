@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - platforms
   layers:
   - Default
   - TransparentFX
@@ -11,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Platforms
   - 
   - 
   - 
@@ -44,6 +45,12 @@ TagManager:
   - name: Background
     uniqueID: 3050654995
     locked: 0
-  - name: 1st Layer Objects
+  - name: Tiles
     uniqueID: 457375619
+    locked: 0
+  - name: Enemies
+    uniqueID: 2098744181
+    locked: 0
+  - name: Player
+    uniqueID: 1751570765
     locked: 0
