@@ -49,6 +49,7 @@ public class astroScript : MonoBehaviour
 
         //set animator parametres
         anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("grounded", isGrounded);
     }
 
     //jumpinggg

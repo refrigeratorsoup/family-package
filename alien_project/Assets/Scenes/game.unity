@@ -824,7 +824,7 @@ MonoBehaviour:
   PlatformsLayer:
     serializedVersion: 2
     m_Bits: 64
-  speed: 5
+  speed: 7
   groundCheck: {fileID: 381506383}
 --- !u!95 &1759263052
 Animator:
