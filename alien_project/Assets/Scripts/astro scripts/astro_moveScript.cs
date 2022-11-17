@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class astroScript : MonoBehaviour
+public class astro_moveScript : MonoBehaviour
 {
     [SerializeField] private LayerMask PlatformsLayer;
     [SerializeField] private float speed;
@@ -38,11 +38,11 @@ public class astroScript : MonoBehaviour
         }
 
         //flipping
-        if (horizontalInput > 0.1f)
+        if (horizontalInput < 0.1f)
         {
             transform.localScale = Vector3.one;
         }
-        if (horizontalInput < 0.1f)
+        if (horizontalInput > 0.1f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
