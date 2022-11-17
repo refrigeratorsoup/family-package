@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class astro_healthScript : MonoBehaviour
 {
+<<<<<<< Updated upstream
     [SerializeField] float health, maxHealth = 20f;
 
     void Start()
@@ -33,6 +34,15 @@ public class astro_healthScript : MonoBehaviour
         }
     }
 
+=======
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+>>>>>>> Stashed changes
     void Update()
     {
         
