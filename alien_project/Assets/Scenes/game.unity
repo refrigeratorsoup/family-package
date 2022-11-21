@@ -1558,7 +1558,7 @@ MonoBehaviour:
   shootSpeed: 900
   shootTimer: 0.0001
   shootPos: {fileID: 1478624570}
-  bullet: {fileID: 537929700024260800, guid: 9ba0f9dad21994274ad112ed3afc3772, type: 3}
+  bullet: {fileID: 7227230658710834930, guid: 8c909ab2c408c4403804340641a5a04c, type: 3}
 --- !u!1 &1766759931
 GameObject:
   m_ObjectHideFlags: 0
