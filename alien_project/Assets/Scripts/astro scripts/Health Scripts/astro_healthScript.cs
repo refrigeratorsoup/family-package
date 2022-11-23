@@ -26,7 +26,7 @@ public class astro_healthScript : MonoBehaviour
         else
         {
             anim.SetTrigger("die");
-            //GetComponent<PlayerMovement>().enabled = false;
+            transform.localScale = new Vector3(0.1f, 0.1f, 0);
         }
     }
 
@@ -42,6 +42,11 @@ public class astro_healthScript : MonoBehaviour
 
     void Update()
     {
-
+        if (Input.GetKey(KeyCode.R))
+        {
+            gameObject.SetActive(true);
+            health = maxHealth;
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 }
