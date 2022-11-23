@@ -784,6 +784,7 @@ GameObject:
   - component: {fileID: 1759263051}
   - component: {fileID: 1759263052}
   - component: {fileID: 1759263053}
+  - component: {fileID: 1759263054}
   m_Layer: 0
   m_Name: astro
   m_TagString: Untagged
@@ -950,6 +951,19 @@ MonoBehaviour:
   shootTimer: 0.00001
   shootPos: {fileID: 693545121}
   bullet: {fileID: 8760932558854707544, guid: 36e8c9e692953487b89819217962a326, type: 3}
+--- !u!114 &1759263054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759263046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35555824a915a4d18bd73de6be335e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 8760932558854707544, guid: 36e8c9e692953487b89819217962a326, type: 3}
 --- !u!1 &1881375417
 GameObject:
   m_ObjectHideFlags: 0
