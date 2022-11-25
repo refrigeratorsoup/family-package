@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class BulletDie : MonoBehaviour
 {
+    public float dieTime;
+
     public GameObject diePEffect;
     void Start()
     {
-        
+        StartCoroutine(Timer());
     }
 
     // Update is called once per frame
@@ -26,6 +28,12 @@ public class BulletDie : MonoBehaviour
         }
     }
 
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(dieTime);
+        Die();
+    }
+
     void Die()
     {
         if(diePEffect != null)
@@ -33,6 +41,7 @@ public class BulletDie : MonoBehaviour
             Instantiate(diePEffect, transform.position, Quaternion.identity);
         }
 
-        gameObject.SetActive(false);
+        Destroy(gameObject);
+        //gameObject.SetActive(false);
     }
 }

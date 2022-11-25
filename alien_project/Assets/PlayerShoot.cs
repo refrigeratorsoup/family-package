@@ -43,7 +43,7 @@ public class PlayerShoot : MonoBehaviour
         isShooting = true;
         GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.identity);
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * direction() * Time.fixedDeltaTime, 0f);
-        newBullet.transform.localScale = new Vector2(newBullet.transform.localScale * direction(), newBullet.transform.localScale.y);
+        newBullet.transform.localScale = new Vector2(newBullet.transform.localScale.x * direction(), newBullet.transform.localScale.y);
 
         if (bullet != null)
         {
