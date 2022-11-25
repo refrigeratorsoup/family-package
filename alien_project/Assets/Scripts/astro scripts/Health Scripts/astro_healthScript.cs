@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class astro_healthScript : MonoBehaviour
 {
     [SerializeField] public float health, maxHealth = 10f;
 
     private Animator anim;
+    private Rigidbody2D body;
+
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;
+
+    public GameOverScreen GameOverScreen;
     
     void Start()
     {
         health = maxHealth;
 
         anim = GetComponent<Animator>();
+
+        respawnPoint = transform.position;
     }
 
     public void TakeDamage(float damageAmount)
@@ -26,7 +35,8 @@ public class astro_healthScript : MonoBehaviour
         else
         {
             anim.SetTrigger("die");
-            transform.localScale = new Vector3(0.1f, 0.1f, 0);
+            GameOverScreen.Setup(0);
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }
     }
 
@@ -40,13 +50,27 @@ public class astro_healthScript : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.R))
+        fallDetector.transform.position = new Vector2(transform.position.x, fallDetector.transform.position.y);
+
+        if (health <= 0)
         {
-            gameObject.SetActive(true);
+            GetComponent<Renderer>().enabled = false;
+            anim.enabled = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "fallDetector")
+        {
             health = maxHealth;
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.position = respawnPoint;
+        }
+        else if (collision.tag == "Checkpoint")
+        {
+            respawnPoint = transform.position;
         }
     }
 }

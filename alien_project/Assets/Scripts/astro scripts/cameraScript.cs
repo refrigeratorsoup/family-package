@@ -20,6 +20,7 @@ public class cameraScript : MonoBehaviour
     {
         Vector3 pos = transform.position;
         pos.z = -10;
+        pos.y = 0;
         transform.position = pos;
     }
 

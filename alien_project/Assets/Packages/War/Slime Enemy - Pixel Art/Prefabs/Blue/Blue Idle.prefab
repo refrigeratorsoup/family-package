@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8048524908834707885}
   - component: {fileID: 8048524908834707886}
   - component: {fileID: 8048524908834707887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue Idle
   m_TagString: enemy
   m_Icon: {fileID: 0}

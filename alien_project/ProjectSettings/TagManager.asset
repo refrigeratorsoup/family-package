@@ -6,6 +6,8 @@ TagManager:
   tags:
   - platforms
   - enemy
+  - fallDetector
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
