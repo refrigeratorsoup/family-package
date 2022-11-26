@@ -65,7 +65,6 @@ public class astro_healthScript : MonoBehaviour
     {
         if (collision.tag == "fallDetector")
         {
-            health = maxHealth;
             transform.position = respawnPoint;
         }
         else if (collision.tag == "Checkpoint")
