@@ -258,6 +258,9 @@ Transform:
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141904994
+<<<<<<< HEAD
+>>>>>>> parent of 659a179 (update)
+=======
 >>>>>>> parent of 659a179 (update)
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,10 +435,13 @@ Transform:
   m_GameObject: {fileID: 233723975}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 26.44, y: 0.26, z: 0}
   m_LocalScale: {x: 1.7372239, y: 0.26265624, z: 1}
   m_ConstrainProportionsScale: 1
 =======
+=======
+>>>>>>> parent of 659a179 (update)
   m_LocalPosition: {x: 7.8379984, y: 0.93000007, z: 0.69916564}
   m_LocalScale: {x: 0.76135, y: 0.6602332, z: 0.76135}
   m_ConstrainProportionsScale: 0
@@ -511,9 +517,15 @@ SpriteRenderer:
   m_SortingLayerID: 457375619
   m_SortingLayer: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingOrder: 1
   m_Sprite: {fileID: 815738309428894162, guid: e0711c1fa59c37d4bbd2c0805a0aad32, type: 3}
   m_Color: {r: 0.32156864, g: 0.32156864, b: 0.32156864, a: 1}
+=======
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 498501302375788654, guid: 4acc9fc65d5ef7347891755ff925dcaa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> parent of 659a179 (update)
 =======
   m_SortingOrder: 0
   m_Sprite: {fileID: 498501302375788654, guid: 4acc9fc65d5ef7347891755ff925dcaa, type: 3}
@@ -1731,7 +1743,10 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 659a179 (update)
 --- !u!1 &667502383
 GameObject:
   m_ObjectHideFlags: 0
@@ -4414,6 +4429,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
+>>>>>>> parent of 659a179 (update)
+=======
 >>>>>>> parent of 659a179 (update)
 --- !u!1 &1421758608
 GameObject:
@@ -5059,11 +5077,17 @@ Transform:
   m_LocalScale: {x: 0.76135, y: 0.6602332, z: 0.76135}
   m_ConstrainProportionsScale: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Children:
   - {fileID: 767677240}
   - {fileID: 535595219}
   m_Father: {fileID: 0}
   m_RootOrder: 8
+=======
+  m_Children: []
+  m_Father: {fileID: 960339247}
+  m_RootOrder: 4
+>>>>>>> parent of 659a179 (update)
 =======
   m_Children: []
   m_Father: {fileID: 960339247}
