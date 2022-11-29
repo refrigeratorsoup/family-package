@@ -817,8 +817,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1758916802}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
-        m_MethodName: ExitButton
+        m_TargetAssemblyTypeName: gameOverScript, Assembly-CSharp
+        m_MethodName: MainMenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1943,7 +1943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d729615658a4054ad24c0ebee65fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsText: {fileID: 1740929073}
+  scoreText: {fileID: 1740929073}
 --- !u!1 &1759263046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 10
   fallDetector: {fileID: 26493379}
-  GameOverScreen: {fileID: 1758916802}
+  gameOverScript: {fileID: 1758916802}
 --- !u!1 &1766759931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,8 +2365,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1758916802}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
-        m_MethodName: RestartButton
+        m_TargetAssemblyTypeName: gameOverScript, Assembly-CSharp
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -4,22 +4,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameOverScreen : MonoBehaviour
+public class gameOverScript : MonoBehaviour
 {
-    public Text pointsText;
+    public Text scoreText;
 
-    public void Setup(int score)
+    public void ScoreScreen(int score)
     {
         gameObject.SetActive(true);
-        pointsText.text = score.ToString() + " POINTS"; 
+        scoreText.text = score.ToString() + " POINTS"; 
     }
 
-    public void RestartButton()
+    public void RestartGame()
     {
         SceneManager.LoadScene("game");
     }
 
-    public void ExitButton()
+    public void MainMenuButton()
     {
         SceneManager.LoadScene("mainMenu");
     }

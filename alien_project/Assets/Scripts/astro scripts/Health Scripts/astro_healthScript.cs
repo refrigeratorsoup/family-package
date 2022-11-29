@@ -13,7 +13,7 @@ public class astro_healthScript : MonoBehaviour
     private Vector3 respawnPoint;
     public GameObject fallDetector;
 
-    public GameOverScreen GameOverScreen;
+    public gameOverScript gameOverScript;
     
     void Start()
     {
@@ -35,7 +35,7 @@ public class astro_healthScript : MonoBehaviour
         else
         {
             anim.SetTrigger("die");
-            GameOverScreen.Setup(0);
+            gameOverScript.ScoreScreen(0);
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }
     }
