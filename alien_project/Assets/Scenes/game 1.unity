@@ -2250,8 +2250,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 10
-  fallDetector: {fileID: 26493379}
-  gameOverScript: {fileID: 1758916802}
 --- !u!1 &1766759931
 GameObject:
   m_ObjectHideFlags: 0
