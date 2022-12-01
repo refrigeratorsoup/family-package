@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class astro_healthScript : MonoBehaviour
 {
-    [SerializeField] public float health, maxHealth = 10f;
+    [SerializeField] public float health, maxHealth = 3f;
 
     private Animator anim;
     private Rigidbody2D body;

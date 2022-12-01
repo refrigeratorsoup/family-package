@@ -4436,7 +4436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 10
+  maxHealth: 3
   fallDetector: {fileID: 1229561311}
   gameOverScript: {fileID: 979778745}
 --- !u!114 &1759263054
