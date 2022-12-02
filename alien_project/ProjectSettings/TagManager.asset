@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - fallDetector
   - Checkpoint
+  - leapDetector
   layers:
   - Default
   - TransparentFX
@@ -63,4 +64,7 @@ TagManager:
     locked: 0
   - name: Test
     uniqueID: 3239977741
+    locked: 0
+  - name: Top
+    uniqueID: 1583003947
     locked: 0
