@@ -9,7 +9,7 @@ public class SlimeScript : MonoBehaviour
     {
         
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -22,6 +22,10 @@ public class SlimeScript : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+
+            scoreScript.scoreValue += 1;
+
+            Debug.Log(scoreScript.scoreValue);
         }
     }
 

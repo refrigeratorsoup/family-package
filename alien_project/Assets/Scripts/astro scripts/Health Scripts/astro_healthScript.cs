@@ -35,7 +35,7 @@ public class astro_healthScript : MonoBehaviour
         else
         {
             anim.SetTrigger("die");
-            gameOverScript.ScoreScreen(0);
+            gameOverScript.ScoreScreen();
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }
     }

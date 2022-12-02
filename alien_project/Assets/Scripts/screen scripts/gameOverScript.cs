@@ -6,12 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class gameOverScript : MonoBehaviour
 {
-    public Text scoreText;
-
-    public void ScoreScreen(int score)
+    public void ScoreScreen()
     {
         gameObject.SetActive(true);
-        scoreText.text = score.ToString() + " POINTS"; 
     }
 
     public void RestartGame()
