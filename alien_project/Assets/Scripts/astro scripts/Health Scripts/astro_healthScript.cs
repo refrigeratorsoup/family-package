@@ -17,6 +17,8 @@ public class astro_healthScript : MonoBehaviour
 
     void Start()
     {
+        scoreScript.scoreValue = 0;
+
         health = maxHealth;
 
         anim = GetComponent<Animator>();
