@@ -15,6 +15,14 @@ public class astro_healthScript : MonoBehaviour
 
     public gameOverScript gameOverScript;
 
+    public leapScreen leapScreen;
+
+    public bool leaped;
+
+    public AudioClip newTrack;
+
+    private audioManager theAM;
+
     void Start()
     {
         scoreScript.scoreValue = 0;
@@ -24,6 +32,10 @@ public class astro_healthScript : MonoBehaviour
         anim = GetComponent<Animator>();
 
         respawnPoint = transform.position;
+
+        leaped = false;
+
+        theAM = FindObjectOfType<audioManager>();
     }
 
     public void TakeDamage(float damageAmount)
@@ -72,6 +84,16 @@ public class astro_healthScript : MonoBehaviour
         else if (collision.tag == "Checkpoint")
         {
             respawnPoint = transform.position;
+        }
+        if (collision.tag == "leapDetector")
+        {
+            transform.position = new Vector3(150, 4.5f, 0);
+            if (newTrack != null)
+            {
+                theAM.ChangeBGM(newTrack);
+            }
+            leaped = true;
+            leapScreen.VictoryScreen();
         }
     }
 }

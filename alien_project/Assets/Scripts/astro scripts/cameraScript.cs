@@ -10,6 +10,14 @@ public class cameraScript : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
+    public astro_healthScript astroHScript;
+
+
+    void Start()
+    {
+        damping = 0.5f;
+    }
+
     void FixedUpdate()
     {
         Vector3 movePosition = player.position + offset;
@@ -21,6 +29,12 @@ public class cameraScript : MonoBehaviour
         Vector3 pos = transform.position;
         pos.z = -10;
         transform.position = pos;
+
+        if (astroHScript.leaped == true)
+        {
+            transform.position = new Vector3(150, 6, -10);
+            damping = 0;
+        }
     }
 
 }
